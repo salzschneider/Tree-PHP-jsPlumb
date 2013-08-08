@@ -9,6 +9,7 @@ Installing
 - download the project
 - wwwroot folder  must point to the `web` folder of the project
 - run `config/tree.sql` in your database
+- create a copy from `config/db_example.json` in `config/` folder named `db.json`
 - set the database connection in `config/db.json`
 - done
 
