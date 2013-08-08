@@ -1,0 +1,50 @@
+html {
+    font-family: Arial,Tahoma,Centurygothic,sans-serif;
+}
+.item {
+    border: 1px solid black;
+    background-color: #ddddff;
+    width: 80px;
+    height: 90px;   
+    position:absolute;
+}
+#header {
+    background-color: #004B81;
+    color: white;
+    padding: 3px;
+}
+.title {
+    color: #161514;
+    font-size: 13px;
+    text-align: center; 
+    padding: 3px;
+    cursor: pointer;
+    margin: 0;
+    border-top: 1px solid #7A7A7A;
+    clear: both;
+}
+
+input {
+    width:95%;  
+}
+
+.add, .del, .col, .exp {
+    width: 14px;
+    cursor: pointer;
+    float: left;  
+    padding-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 6px;
+}
+
+.del {
+    margin-top: 0px !important;
+}
+
+.col, .exp {
+    padding-top: 2px;
+    font-size: 11px;
+    text-decoration: underline;
+}
+      
+

@@ -1,0 +1,34 @@
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+
+CREATE TABLE IF NOT EXISTS `tree` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `parent_id` int(11) NOT NULL,
+  `title` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `parent_id` (`parent_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=366 ;
+
+INSERT INTO `tree` (`id`, `parent_id`, `title`) VALUES
+(1, 0, 'gyoker'),
+(355, 1, 'Parent: 1'),
+(356, 1, 'Parent: 1'),
+(357, 1, 'Parent: 1'),
+(358, 355, 'Parent: 355'),
+(359, 355, 'Parent: 355'),
+(360, 358, 'Parent: 358'),
+(361, 359, 'Parent: 359'),
+(362, 356, 'Parent: 356'),
+(363, 356, 'Parent: 356'),
+(364, 363, 'Parent: 363'),
+(365, 364, 'Parent: 364');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
